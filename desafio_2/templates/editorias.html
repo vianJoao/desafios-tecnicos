@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editorias</title>
+</head>
+<body>
+    <h1>Editorias</h1>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Editoria</th>
+                <th>Tom</th>
+                <th>Paleta</th>
+                <th>Texto de Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in dados %}
+            <tr>
+                <td>{{ row['Editoria'] }}</td>
+                <td>{{ row['Tom'] }}</td>
+                <td>{{ row['Paleta'] }}</td>
+                <td>{{ row['Texto de Exemplo'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
